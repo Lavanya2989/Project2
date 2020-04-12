@@ -23,7 +23,6 @@ namespace project1.Pages
         {
                         //Create new function
             driver.FindElement(By.XPath("//*[@id='container']/p/a")).Click();
-
             //create new function for Material
             //select material
             driver.FindElement(By.XPath("//*[@id='TimeMaterialEditForm']/div/div[1]/div/span[1]/span/span[1]")).Click();

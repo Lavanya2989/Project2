@@ -13,7 +13,13 @@ namespace project1.Test
     [Parallelizable]
     class CustomerPageTestSuite : CommonDriver
         {
-            [Test,Description("Validate Create CustomerPage with valid Data")]
+        [SetUp, Description("Validate it navigate to CustomerPage")]
+        public void NavigateToCstomerPage()
+        {
+            CustomerPage custObj = new CustomerPage();
+            custObj.NavigateToCustomerPage(driver);
+        }
+        [Test,Description("Validate Create CustomerPage with valid Data")]
             public void CreateCustomerTest()
             {
                 CustomerPage custObj = new CustomerPage();

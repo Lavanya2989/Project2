@@ -18,10 +18,6 @@ namespace Helpers
             //login page objectD:\project1\project1\Program.cs
             LoginPage loginObj = new LoginPage();
             loginObj.LoginSteps(driver);
-
-            HomePage homeObj = new HomePage();
-            homeObj.NavigateToCustomerPage(driver);
-
         }
         [OneTimeTearDown]
         public void TestTearDown()

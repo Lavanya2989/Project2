@@ -14,8 +14,14 @@ namespace project1.Test
     [Parallelizable]
     class TimeMaterialTestSuite : CommonDriver
     {
-             [Test, NUnit.Framework.Description("Validate Create Within TMPage")]
-            public void CreateTM()
+        [SetUp]
+        public void NavigateToTMPage()
+        {
+            TMPage tmObj = new TMPage();
+            tmObj.NavigateToTMPage(driver);
+        }
+        [Test, NUnit.Framework.Description("Validate Create Within TMPage")]
+             public void CreateTM()
             {
                 TMPage tmObj = new TMPage();
                 tmObj.CreateTM(driver);

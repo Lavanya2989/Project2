@@ -25,21 +25,5 @@ namespace project1.Pages
                     Assert.Fail();
             }
         }
-        public void NavigateToTMPage(IWebDriver driver)
-        {
-                   //Find element administration
-                driver.FindElement(By.XPath("/ html / body / div[3] / div / div / ul / li[5] / a")).Click();
-
-                //Drop down and click on Time and Material
-                driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/ul/li[3]/a")).Click();
-         }
-        public void NavigateToCustomerPage(IWebDriver driver)
-        {
-                            //Fiind Element administration
-                driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/a")).Click();
-                //Drop down and click on Customer
-                driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/ul/li[1]/a")).Click();
-        }
-
     }
 }

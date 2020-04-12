@@ -11,7 +11,14 @@ namespace project1.Pages
 {
         class CustomerPage
     {
-                public void CreateCustomer(IWebDriver driver)
+        public void NavigateToCustomerPage(IWebDriver driver)
+        {
+            //Fiind Element administration
+            driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/a")).Click();
+            //Drop down and click on Customer
+            driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/ul/li[1]/a")).Click();
+        }
+        public void CreateCustomer(IWebDriver driver)
         {
             //Click create new
             driver.FindElement(By.XPath("//*[@id='container']/p/a")).Click();
